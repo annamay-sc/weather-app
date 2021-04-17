@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+.outline {
+  display: block;
+  border-radius: 30px;
+  background-color: rgb(243, 157, 157);
+  max-width: 550px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.search {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+button {
+  max-height: 36px;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  max-height: 30px;
+}
+h2 {
+  font-size: 20px;
+}
+.current {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+}
+.primary {
+  font-size: 75px;
+  color: gold;
+}
+.date {
+  font-size: 15px;
+}
+.future {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.day {
+  font-size: 17px;
+}
+.weather {
+  font-size: 30px;
+  padding: 5px;
+}
+.temperature {
+  font-size: 15px;
+  padding: 5px;
+}
