@@ -87,7 +87,16 @@ function getCurrentCity(response) {
 
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
 
 let currentLocation = document.querySelector("#location");
 currentLocation.addEventListener("click", locate);
+
+searchCity("New York");
