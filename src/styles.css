@@ -68,3 +68,7 @@ li {
   font-size: 15px;
   padding: 5px;
 }
+footer {
+  display: block;
+  text-align: center;
+}
