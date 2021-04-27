@@ -9,7 +9,7 @@ body {
   border-radius: 30px;
   background-color: rgb(243, 157, 157);
   max-width: 550px;
-  height: 400px;
+  max-height: 400px;
   margin: 0 auto;
   margin-top: 50px;
 }
