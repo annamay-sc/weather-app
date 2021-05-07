@@ -107,4 +107,18 @@ function getCurrentCity(response) {
 let currentLocation = document.querySelector("#location");
 currentLocation.addEventListener("click", locate);
 
+function convertToFahrenheit(event) {
+  event.preventDefault();
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+function convertToCelsius(event) {
+  event.preventDefault();
+}
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
+
 searchCity("New York");
