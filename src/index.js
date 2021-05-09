@@ -95,7 +95,7 @@ function displayForecast(response) {
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "e44125e94d8c8ca1fb8ce7697ffa8a7b";
-  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiURL).then(displayForecast);
 }
 
@@ -115,7 +115,7 @@ function showTemperature(response) {
 
 function searchCity(city) {
   let apiKey = "e44125e94d8c8ca1fb8ce7697ffa8a7b";
-  let units = "metric";
+  let units = "imperial";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(getCurrentCity);
 }
@@ -129,7 +129,7 @@ function handlePosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiKey = "e44125e94d8c8ca1fb8ce7697ffa8a7b";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(getCurrentCity);
 }
@@ -164,27 +164,6 @@ function getCurrentCity(response) {
 
 let currentLocation = document.querySelector("#location");
 currentLocation.addEventListener("click", locate);
-
-function convertToFahrenheit(event) {
-  event.preventDefault;
-  temperatureElement = document.querySelector("#current-temperature");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-let celciusTemperature = null;
-
-function convertToCelsius(event) {
-  event.preventDefault;
-  temperatureElement = document.querySelector("#current-temperature");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
-}
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("New York");
 
