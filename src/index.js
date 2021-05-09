@@ -107,16 +107,12 @@ function getCurrentCity(response) {
 let currentLocation = document.querySelector("#location");
 currentLocation.addEventListener("click", locate);
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-}
+function convertToFahrenheit(event) {}
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-function convertToCelsius(event) {
-  event.preventDefault();
-}
+function convertToCelsius(event) {}
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);

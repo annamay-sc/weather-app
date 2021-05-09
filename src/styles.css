@@ -53,10 +53,6 @@ li {
 .date {
   font-size: 15px;
 }
-.future {
-  text-align: center;
-  margin-bottom: 20px;
-}
 .day {
   font-size: 17px;
 }
@@ -71,4 +67,5 @@ li {
 footer {
   display: block;
   text-align: center;
+  font-size: 15px;
 }
