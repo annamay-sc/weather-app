@@ -19,17 +19,16 @@ body {
 }
 
 button {
-  max-height: 36px;
-  padding: 50px;
+  max-height: 38px;
+}
+button-size {
+  font-size: 50px;
 }
 
 h1 {
   text-align: center;
   font-size: 30px;
   max-height: 30px;
-}
-h2 {
-  font-size: 20px;
 }
 
 li {
@@ -56,13 +55,13 @@ li {
 .day {
   font-size: 17px;
 }
-.weather {
-  font-size: 30px;
-  padding: 5px;
-}
-.temperature {
+.now {
   font-size: 15px;
   padding: 5px;
+}
+.weather-forecast,
+.time {
+  font-size: 15px;
 }
 footer {
   display: block;

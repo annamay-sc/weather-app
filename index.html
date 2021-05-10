@@ -27,7 +27,7 @@
     <div class="outline">
       <form class="container search" id="search-form">
         <div class="row search">
-          <div class="form-group col-6">
+          <div class="form-group col-7">
             <input
               type="text"
               class="form-control"
@@ -36,7 +36,7 @@
             />
           </div>
           <button type="submit" class="btn btn-primary col-2">Submit</button>
-
+          <div class="col-1"></div>
           <button type="button" class="btn btn-primary col-2" id="location">
             Current Location
           </button>
@@ -45,15 +45,13 @@
       <h1 id="display-city"></h1>
       <div class="continer current">
         <div class="row">
-          <div class="col-sm">
-            <h2>
-              <span id="current-temperature"></span>
-              <span class="units">
-                <a href="#" id="celsius-link">°C</a> ∣
-                <a href="#" id="fahrenheit-link">°F</a>
-              </span>
-            </h2>
-            <h2 id="description">Sunny</h2>
+          <div class="col-sm" id="now">
+            <span id="current-temperature"></span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> ∣
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+            <div id="description"></div>
             <ul>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> km/h</li>
