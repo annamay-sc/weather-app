@@ -26,7 +26,7 @@
   <body>
     <div class="outline">
       <form class="container search" id="search-form">
-        <div class="row search">
+        <div class="gap-2 d-md-flex search">
           <div class="form-group col-6">
             <input
               type="text"
@@ -35,13 +35,10 @@
               placeholder="Enter a city"
             />
           </div>
-          <div class="col-sm"></div>
-          <button type="submit" class="btn btn-primary col-2">Submit</button>
-          <div class="col-sm"></div>
-          <button type="button" class="btn btn-primary col-2" id="location">
-            Location
+          <button type="submit" class="btn btn-info col-3">Submit</button>
+          <button type="button" class="btn btn-info btn-sm col-3" id="location">
+            Current Location
           </button>
-          <div class="col-sm"></div>
         </div>
       </form>
       <h1 id="display-city"></h1>
