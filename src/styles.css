@@ -21,9 +21,6 @@ body {
 button {
   max-height: 38px;
 }
-button-size {
-  font-size: 50px;
-}
 
 h1 {
   text-align: center;
@@ -52,15 +49,13 @@ li {
 .date {
   font-size: 15px;
 }
-.day {
-  font-size: 17px;
-}
+
 .now {
   font-size: 15px;
   padding: 5px;
 }
-.weather-forecast,
-.time {
+
+.weather-forecast {
   font-size: 15px;
 }
 footer {
